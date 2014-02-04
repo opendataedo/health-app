@@ -1,0 +1,125 @@
+/* 
+    Document   : app.css
+    Created on : Oct 29, 2013, 9:06:31 AM
+    Author     : edsgICT-WB52
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html,body{
+        margin: 0px;
+        padding:0px;
+}
+body{
+        height:100%;
+        font-size: small;
+        font-family: verdana, arial;                
+}
+header,aside, article{
+        display: block;
+}
+header{
+        background-color:#886A08;
+        margin:0;
+        height:100px;
+        width:100%;
+        padding:0px;
+        box-shadow: 0px 5px 5px #000000;
+}
+a:link{
+        color: #292A0A;        
+}
+a:hover{
+        text-decoration: none;
+}
+h1{
+        padding-top:25px;
+        margin:0;
+        text-align: center;
+        color:#fff;        
+}
+
+h2{
+        text-align: center;
+}
+aside{
+        border-right: 1px solid #808080;
+        height: 100%;
+        width: 15%;
+        float: left;
+        padding:10px;
+}
+
+#footer_info{
+        margin-top:200px;
+        font-size: small;
+        font-weight: bold;
+}
+
+article{
+        margin-left: 250px;
+        margin-top: 20px;        
+}
+iframe{
+        width:100%;
+        height:500px;
+        border:0;
+}
+.my-legend{
+    padding: 10px;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: right;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    border: 1px solid #bbb;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    min-width: 180px;
+    max-height: 400px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999999;
+}
+.my-legend .legend-title {
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 100%;
+
+}
+.my-legend .legend-scale ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+.my-legend .legend-scale ul li {
+  display: block;
+  float: left;
+  width: 100px;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 90%;
+  list-style: none;
+}
+.my-legend ul.legend-labels li span {
+  display: block;
+  float: left;
+  height: 15px;
+  width: 100px;
+}
+.my-legend .legend-source {
+  font-size: 90%;
+  color: #999;
+  clear: both;
+}
+.my-legend a {
+  color: #777;
+}
+
