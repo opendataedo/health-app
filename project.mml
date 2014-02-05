@@ -11,7 +11,17 @@
     9
   ],
   "format": "png",
-  "interactivity": false,
+  "interactivity": {
+    "layer": "lgashapesjoined",
+    "template_teaser": "LGA Name: {{{NAME}}}<br>\nMalaria Occurrences: <b>{{cases12}}</b> <br>\nLGA Population: <b>{{population}}</b> <br>\nPercentage (Cases/Population X 100): <b>{{ratio12}}%</b>\nCompared to 2011: <b> {{diff}}% </b>",
+    "fields": [
+      "NAME",
+      "cases12",
+      "population",
+      "ratio12",
+      "diff"
+    ]
+  },
   "minzoom": 8,
   "maxzoom": 9,
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
@@ -40,7 +50,10 @@
       "id": "lgashapesjoined",
       "class": "",
       "Datasource": {
-        "file": "lga_shapes_joined.shp"
+        "file": "lga_shapes_joined.shp",
+        "id": "lgashapesjoined",
+        "project": "health-app",
+        "srs": ""
       },
       "srs-name": "autodetect",
       "srs": "",
@@ -52,5 +65,6 @@
   "metatile": 2,
   "name": "Visualization for health data in Edo",
   "description": "",
-  "attribution": ""
+  "attribution": "",
+  "legend": "<div class='my-legend'>\n<div class='legend-title'>Malaria Occurrences to Population Ratio (2012)</div>\n<div class='legend-scale'>\n  <ul class='legend-labels'>\n    <li><span style='background:#f5ecce;'></span>less than 4</li>\n    <li><span style='background:#f5da81;'></span>4-5</li>\n    <li><span style='background:#f7d358;'></span>6-7</li>\n    <li><span style='background:#3a2f0b;'></span>8-9</li>\n    <li><span style='background:#886a08;'></span>10-13</li>\n  </ul>\n</div>\n<div class='legend-source'>Source: <a href=\"http://data.edostate.gov.ng/organization/ministry-of-health\" target=\"_blank\">Ministry of Health</a> via the <a href=\"http://data.edostate.gov.ng/\" target=\"_blank\">Edo State Open Data Portal</a></div>\n</div>\n\n<style type='text/css'>\n  .wax-legend .legend-title {\n    text-align: left;\n    margin-bottom: 8px;\n    font-weight: bold;\n    font-size: 100%;\n\n    }\n  .wax-legend .legend-scale ul {\n    margin: 0;\n    padding: 0;\n    float: left;\n    list-style: none;\n    }\n  .wax-legend .legend-scale ul li {\n    display: block;\n    float: left;\n    width: 100px;\n    margin-bottom: 6px;\n    text-align: center;\n    font-size: 90%;\n    list-style: none;\n    }\n  .wax-legend ul.legend-labels li span {\n    display: block;\n    float: left;\n    height: 15px;\n    width: 100px;\n    }\n  .wax-legend .legend-source {\n    font-size: 90%;\n    color: #999;\n    clear: both;\n    }\n  .wax-legend a {\n    color: #777;\n    }\n</style>"
 }
